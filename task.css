@@ -1,0 +1,177 @@
+ body{
+    margin: 0;
+ }
+* {font-family:    Arial, sans-serif;
+    box-sizing: border-box;
+     
+}
+.subcontainer{
+    float: left;
+   width: 50%;
+   padding:8px 20px;
+}
+.gallery{
+    position: relative;
+
+}
+.gallery i{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 30px;
+    cursor: pointer;
+
+}
+.subcontainer img{
+    height: 400px;
+    width:  100%;
+    border-radius: 10px;
+}
+.description h4{
+    margin-top: 15px;
+    margin-bottom: -10px;
+    color:rgb(88, 235, 43);
+    font-weight: bold;
+}
+.description p{
+color: grey;
+}
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+.detail-btn h2,.detail-btn button{
+    display:inline; 
+   
+}
+.detail-btn button{
+    float: right;
+    color: white;
+    background-color: rgb(120, 175, 12) ;
+    padding:10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+div.icons i{
+    
+    border-right:1px solid black ;
+}
+div.input-btn{
+    display: flex;
+    flex-direction: nowrap;
+    background-color: white;
+    border-radius: 25px;
+}
+.input-btn input{
+    width:100%;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+}
+.input-btn button{
+    cursor: pointer;
+    padding: 20px;
+    border-radius: 30px;
+    color: white;
+    background-color: rgb(120, 175, 12);
+    border: none;
+}
+/*footer*/
+div.footer{
+    background-color: rgb(233, 238, 240);
+    padding: 40px;
+}
+.col{
+    float: left;
+ 
+}
+.email{
+    width: 27%;
+}
+.learn-more{
+    width: 14.66%;
+    padding-left: 50px;
+}
+.community{
+    width: 14.66%;
+    padding-left: 25px;
+}
+.contact-info{
+    width: 29%;
+    padding-left: 50px;
+}
+.social-links{
+    width: 14.66%;
+    padding-left: 20px;
+}
+
+.col li{
+ list-style-type:none ;
+ padding-bottom:20px;
+  
+}
+.col:first-child{
+    padding-top: 0;
+}
+.community a,.learn-more a{
+    text-decoration: none;
+     color: gray;
+}
+.col p{
+    color: gray;
+} 
+
+.contact-via-email-btn{
+    margin:15px 0;
+    padding: 15px;
+    color:white;
+    background-color:  rgb(120, 175, 12);
+    border-radius: 25px;
+    border: none;
+    width: 100%;
+}
+@media screen and (max-width:768px){
+    .col{
+        float: none;
+    }
+    .col{
+        padding-left: 0;
+     }
+    .email{
+        width: 50%;
+    }
+    .learn-more,.community,.contact-info{
+        float: left;
+        width: 33.33%;
+
+    }
+    .social-links{
+        clear: both;
+        width: 50%;
+    }
+}
+@media  screen and (max-width:425px) {
+    .col,.detail-btn button{
+        float: none;
+    }
+     .col{
+        padding-left: 0;
+     }
+
+     .email{
+        width: 100%;
+    }
+    .learn-more,.community{
+        float: left;
+        width: 50%;
+    }
+    .contact-info{
+         width: 100%;
+         clear: both;
+    }
+    .social-links{
+        width: 50%;
+    }
+}
